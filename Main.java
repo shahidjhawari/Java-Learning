@@ -1,9 +1,9 @@
-class Student {
+class Teacher {
 
     String name;
     int age;
 
-    void display() {
+    void show() {
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
     }
@@ -12,12 +12,21 @@ class Student {
 public class Main {
 
     public static void main(String[] args) {
+        Staff staff1 = new Staff();
+        staff1.email = "ali@example.com";
+        staff1.salary = 50000;
+        staff1.getInfo();
 
-        Student s1 = new Student();
+    }
+}
 
-        s1.name = "Ali";
-        s1.age = 20;
 
-        s1.display();
+class Staff {
+    String email;
+    int salary;
+
+    void getInfo() {
+        System.out.println("Email: " + email);
+        System.out.println("Salary: " + salary);
     }
 }
